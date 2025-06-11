@@ -1,1 +1,0 @@
-# espaco-mithari-lp
