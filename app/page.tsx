@@ -10,6 +10,7 @@ import { Heart, Zap, Brain, CheckCircle, Star, MapPin, Phone, Instagram, Menu, X
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
 
 export default function EspacoMithariLanding() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -30,7 +31,7 @@ export default function EspacoMithariLanding() {
           <div className="container flex h-10 items-center justify-end">
             <div className="flex items-center gap-4">
               <Link
-                href="https://wa.me/5512999999999"
+                href="https://api.whatsapp.com/send?phone=5511989113465&text=Ol%C3%A1,%20tudo%20bem?%20gostaria%20de%20agendar%20uma%20consulta"
                 target="_blank"
                 className="flex items-center gap-1 text-xs hover:text-white/80 transition-colors"
                 aria-label="WhatsApp"
@@ -107,7 +108,7 @@ export default function EspacoMithariLanding() {
           </nav>
 
           <Button asChild className="hidden md:flex border-[#e8566c] text-[#fff] hover:bg-[#e8566c] hover:text-[white] font-bold">
-            <Link href="https://wa.me/5512999999999?text=Olá! Gostaria de agendar minha sessão no Espaço Mithari" target="_blank">
+            <Link href="https://api.whatsapp.com/send?phone=5511989113465&text=Ol%C3%A1,%20tudo%20bem?%20gostaria%20de%20agendar%20uma%20consulta" target="_blank">
               <Phone className="mr-2 h-5 w-5" />
               AGENDAR CONSULTA
             </Link>
@@ -153,7 +154,7 @@ export default function EspacoMithariLanding() {
               >
                 FAQ
               </button>
-              <Link href="https://wa.me/5512999999999?text=Olá! Gostaria de agendar minha sessão no Espaço Mithari">
+              <Link href="https://api.whatsapp.com/send?phone=5511989113465&text=Ol%C3%A1,%20tudo%20bem?%20gostaria%20de%20agendar%20uma%20consulta" target="_blank">
                 <Button className="w-full bg-[#e8566c] hover:bg-[#d64560] text-white font-bold">
                 AGENDAR CONSULTA
                 </Button>
@@ -165,30 +166,31 @@ export default function EspacoMithariLanding() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section id="home" className="relative py-14 md:py-10 bg-white overflow-hidden">
+        <section id="home" className="relative py-14 md:py-10 bg-gradient-to-l from-[#fff] to-[#e6a3a3] to-[#e8566c] overflow-hidden">
           <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#f8f6f3_0.5px,transparent_0.5px)] [background-size:20px_20px] opacity-10"></div>
           <div className="container grid gap-8 md:grid-cols-2 items-center relative">
             <div className="space-y-4 md:space-y-6 z-10">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#333333] leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#fff] leading-tight">
                 Reconecte-se Com Seu <span className="text-[#e8566c]">Equilíbrio Natural</span>
               </h1>
-              <h2 className="text-xl md:text-2xl text-gray-600 font-light">
+              <h2 className="text-xl md:text-2xl text-white font-light">
                 Ansiedade, dores crônicas ou cansaço excessivo não precisam ser sua rotina...
               </h2>
               <Button size="lg" className="bg-[#e8566c] hover:bg-[#d64560] text-white shadow-lg">
                 <Link
-                  href="https://wa.me/5512999999999?text=Olá! Gostaria de agendar minha sessão experimental no Espaço Mithari"
+                  href="https://api.whatsapp.com/send?phone=5511989113465&text=Ol%C3%A1,%20tudo%20bem?%20gostaria%20de%20agendar%20uma%20consulta"
                   className="uppercase font-bold flex items-center font-bold"
+                  target="_blank"
                 >
                   <Phone className="mr-2 h-5 w-5" />
                   AGENDAR CONSULTA
                 </Link>
               </Button>
-              <p className="text-sm text-gray-500">✨ Primeira consulta com desconto especial</p>
+              
             </div>
             <div className="relative w-full h-[400px] md:h-[600px] lg:h-[600px] flex items-center justify-center mt-10 md:mt-0">
               <Image
-                src="/placeholder.svg?height=600&width=500"
+                src="/hero.png?height=600&width=500"
                 alt="Ambiente terapêutico do Espaço Mithari"
                 width={500}
                 height={600}
@@ -289,7 +291,7 @@ export default function EspacoMithariLanding() {
             </div>
 
             <div className="text-center">
-              <Link href="https://wa.me/5512999999999?text=Olá! Gostaria de saber mais sobre os tratamentos do Espaço Mithari">
+              <Link href="https://api.whatsapp.com/send?phone=5511989113465&text=Ol%C3%A1,%20tudo%20bem?%20gostaria%20de%20agendar%20uma%20consulta" target="_blank">
                 <Button
                   variant="outline"
                   size="lg"
@@ -351,7 +353,7 @@ export default function EspacoMithariLanding() {
 
               <div className="space-y-6">
                 <Image
-                  src="/placeholder.svg?height=400&width=500"
+                  src="/mithari2.png?height=400&width=500"
                   alt="Sala de terapias do Espaço Mithari"
                   width={500}
                   height={400}
@@ -423,20 +425,41 @@ export default function EspacoMithariLanding() {
                 </div>
               </div>
 
-              <div className="relative">
-                <Image
-                  src="/placeholder.svg?height=500&width=400"
-                  alt="Fundadora do Espaço Mithari"
-                  width={400}
-                  height={500}
-                  className="rounded-2xl shadow-2xl"
-                />
-                <div className="absolute -bottom-4 -right-4 bg-[#e8566c] text-white p-4 rounded-xl shadow-lg">
-                  <div className="text-center">
-                    <div className="font-bold">Certificações</div>
-                    <div className="text-sm">Internacionais</div>
-                  </div>
-                </div>
+              <div className="relative justify-end mx-auto">
+                <Carousel
+                  opts={{
+                    align: "start",
+                    loop: true,
+                  }}
+                  className="w-full max-w-[400px]"
+                >
+                  <CarouselContent>
+                    <CarouselItem>
+                      <div className="p-1">
+                        <Image
+                          src="/mithari.png"
+                          alt="Espaço Mithari"
+                          width={400}
+                          height={500}
+                          className="rounded-2xl shadow-2xl"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="p-1">
+                        <Image
+                          src="/mithari3.png"
+                          alt="Espaço Mithari"
+                          width={400}
+                          height={500}
+                          className="rounded-2xl shadow-2xl"
+                        />
+                      </div>
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious className="left-2 text-white" />
+                  <CarouselNext className="right-2 text-white" />
+                </Carousel>
               </div>
             </div>
           </div>
@@ -535,7 +558,7 @@ export default function EspacoMithariLanding() {
 
             <div className="text-center">
               <p className="text-lg text-white mb-6">Quer resultados assim? Agende agora sua sessão experimental!</p>
-              <Link href="https://wa.me/5512999999999?text=Olá! Vi os depoimentos e gostaria de agendar minha sessão no Espaço Mithari">
+              <Link href="https://api.whatsapp.com/send?phone=5511989113465&text=Ol%C3%A1,%20tudo%20bem?%20gostaria%20de%20agendar%20uma%20consulta" target="_blank">
                 <Button
                   size="lg"
                   className="bg-white text-[#e8566c] hover:bg-white/90 px-8 py-4 text-lg font-bold"
@@ -593,7 +616,7 @@ export default function EspacoMithariLanding() {
 
             <div className="text-center mt-12">
               <p className="text-gray-600 mb-6">Ainda tem dúvidas? Entre em contato conosco!</p>
-              <Link href="https://wa.me/5512999999999?text=Olá! Tenho algumas dúvidas sobre os tratamentos do Espaço Mithari">
+              <Link href="https://api.whatsapp.com/send?phone=5511989113465&text=Ol%C3%A1,%20tudo%20bem?%20gostaria%20de%20agendar%20uma%20consulta" target="_blank">
                 <Button
                   variant="outline"
                   size="lg"
@@ -615,10 +638,16 @@ export default function EspacoMithariLanding() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-gradient-to-br from-[#e6a3a3] to-[#e8566c] rounded-full flex items-center justify-center">
-                  <Heart className="w-6 h-6 text-white" />
-                </div>
-                <span className="text-xl font-bold">Espaço Mithari</span>
+               
+                <Image
+                  src="/logomithari.png"
+                  alt="Espaço Mithari Logo"
+                  width={200}
+                  height={100}
+                  className="h-24 w-auto"
+                />
+                
+                
               </div>
               <p className="text-gray-300">Transformando vidas através de terapias holísticas desde 2015.</p>
             </div>
@@ -669,15 +698,7 @@ export default function EspacoMithariLanding() {
         </div>
       </footer>
 
-      {/* Botão WhatsApp Flutuante */}
-      <Link
-        href="https://wa.me/5512999999999?text=Olá! Gostaria de agendar uma sessão no Espaço Mithari"
-        className="fixed bottom-6 right-6 z-50"
-      >
-        <div className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
-          <Phone className="w-6 h-6" />
-        </div>
-      </Link>
+     
     </div>
   )
 }
