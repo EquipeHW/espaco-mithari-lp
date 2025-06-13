@@ -166,7 +166,7 @@ export default function EspacoMithariLanding() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section id="home" className="relative py-14 md:py-10 bg-gradient-to-l from-[#fff] to-[#e6a3a3] to-[#e8566c] overflow-hidden">
+        <section id="home" className="relative py-14 md:py-10 bg-gradient-to-l  from-[#e98a92] to-[#f8d7da] to-[#e8566c] overflow-hidden">
           <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#f8f6f3_0.5px,transparent_0.5px)] [background-size:20px_20px] opacity-10"></div>
           <div className="container grid gap-8 md:grid-cols-2 items-center relative">
             <div className="space-y-4 md:space-y-6 z-10">
@@ -176,7 +176,7 @@ export default function EspacoMithariLanding() {
               <h2 className="text-xl md:text-2xl text-white font-light">
                 Ansiedade, dores crônicas ou cansaço excessivo não precisam ser sua rotina...
               </h2>
-              <Button size="lg" className="bg-[#e8566c] hover:bg-[#d64560] text-white shadow-lg">
+              <Button size="lg" className="bg-gradient-to-r from-[#e8566c] to-[#d64560] hover:from-[#d64560] hover:to-[#e8566c] text-white shadow-lg rounded-xl">
                 <Link
                   href="https://api.whatsapp.com/send?phone=5511989113465&text=Ol%C3%A1,%20tudo%20bem?%20gostaria%20de%20agendar%20uma%20consulta"
                   className="uppercase font-bold flex items-center font-bold"
@@ -189,12 +189,13 @@ export default function EspacoMithariLanding() {
               
             </div>
             <div className="relative w-full h-[400px] md:h-[600px] lg:h-[600px] flex items-center justify-center mt-10 md:mt-0">
+             
               <Image
                 src="/hero.png?height=600&width=500"
                 alt="Ambiente terapêutico do Espaço Mithari"
                 width={500}
                 height={600}
-                className="object-contain object-right-bottom transform scale-125"
+                className="object-contain object-right-bottom transform scale-125 rounded-2xl"
                 priority
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
@@ -208,7 +209,7 @@ export default function EspacoMithariLanding() {
         </section>
 
         {/* Seção Benefícios */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-gradient-to-b from-white to-[#f8d7da]">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-4">
@@ -220,7 +221,7 @@ export default function EspacoMithariLanding() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <Card className="p-8 text-center hover:shadow-lg transition-shadow duration-300 border-zinc-900 hover:border-[#e6a3a3]">
+              <Card className="p-8 text-center hover:shadow-lg transition-shadow duration-300 border-zinc-900 hover:border-[#e8566c] bg-white/90 backdrop-blur-sm rounded-2xl">
                 <CardContent className="space-y-4">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#e6a3a3] to-[#e8566c] rounded-full flex items-center justify-center mx-auto">
                     <Heart className="w-8 h-8 text-white" />
@@ -243,7 +244,7 @@ export default function EspacoMithariLanding() {
                 </CardContent>
               </Card>
 
-              <Card className="p-8 text-center hover:shadow-lg transition-shadow duration-300 border-zinc-900 hover:border-[#e6a3a3]">
+              <Card className="p-8 text-center hover:shadow-lg transition-shadow duration-300 border-zinc-900 hover:border-[#e8566c] bg-white/90 backdrop-blur-sm rounded-2xl">
                 <CardContent className="space-y-4">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#e6a3a3] to-[#e8566c] rounded-full flex items-center justify-center mx-auto">
                     <Zap className="w-8 h-8 text-white" />
@@ -266,7 +267,7 @@ export default function EspacoMithariLanding() {
                 </CardContent>
               </Card>
 
-              <Card className="p-8 text-center hover:shadow-lg transition-shadow duration-300 border-zinc-900 hover:border-[#e6a3a3]">
+              <Card className="p-8 text-center hover:shadow-lg transition-shadow duration-300 border-zinc-900 hover:border-[#e8566c] bg-white/90 backdrop-blur-sm rounded-2xl">
                 <CardContent className="space-y-4">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#e6a3a3] to-[#e8566c] rounded-full flex items-center justify-center mx-auto">
                     <Brain className="w-8 h-8 text-white" />
@@ -295,7 +296,7 @@ export default function EspacoMithariLanding() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-[#e8566c] text-[#e8566c] hover:bg-[#e8566c] hover:text-white font-bold"
+                  className="border-[#e8566c] text-[#e8566c] hover:bg-gradient-to-r hover:from-[#e8566c] hover:to-[#d64560] hover:text-white font-bold rounded-xl"
                 >
                      AGENDAR CONSULTA
                 </Button>
@@ -305,7 +306,7 @@ export default function EspacoMithariLanding() {
         </section>
 
         {/* Tratamentos */}
-        <section id="tratamentos" className="py-20 bg-[#e8566c]">
+        <section id="tratamentos" className="py-20 bg-gradient-to-b from-[#e8566c] to-[#d64560]">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Nossos Tratamentos Especializados</h2>
@@ -317,7 +318,7 @@ export default function EspacoMithariLanding() {
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
               <div className="space-y-8">
                 <div className="space-y-6">
-                  <Card className="p-6 hover:shadow-lg transition-shadow bg-white/95">
+                  <Card className="p-6 hover:shadow-lg transition-shadow bg-white/90 backdrop-blur-sm rounded-2xl">
                     <CardContent className="space-y-3">
                       <h3 className="text-xl font-bold text-[#333333]">Barras de Access®</h3>
                       <p className="text-gray-600">
@@ -328,7 +329,7 @@ export default function EspacoMithariLanding() {
                     </CardContent>
                   </Card>
 
-                  <Card className="p-6 hover:shadow-lg transition-shadow bg-white/95">
+                  <Card className="p-6 hover:shadow-lg transition-shadow bg-white/90 backdrop-blur-sm rounded-2xl">
                     <CardContent className="space-y-3">
                       <h3 className="text-xl font-bold text-[#333333]">ThetaHealing®</h3>
                       <p className="text-gray-600">
@@ -339,7 +340,7 @@ export default function EspacoMithariLanding() {
                     </CardContent>
                   </Card>
 
-                  <Card className="p-6 hover:shadow-lg transition-shadow bg-white/95">
+                  <Card className="p-6 hover:shadow-lg transition-shadow bg-white/90 backdrop-blur-sm rounded-2xl">
                     <CardContent className="space-y-3">
                       <h3 className="text-xl font-bold text-[#333333]">Terapia Floral</h3>
                       <p className="text-gray-600">
@@ -352,15 +353,18 @@ export default function EspacoMithariLanding() {
               </div>
 
               <div className="space-y-6">
-                <Image
-                  src="/mithari2.png?height=400&width=500"
-                  alt="Sala de terapias do Espaço Mithari"
-                  width={500}
-                  height={400}
-                  className="rounded-2xl shadow-lg"
-                />
+                <div className="relative w-full">
+                  <div className="absolute inset-0 bg-black/20 rounded-2xl"></div>
+                  <Image
+                    src="/mithari2.png?height=400&width=500"
+                    alt="Sala de terapias do Espaço Mithari"
+                    width={500}
+                    height={400}
+                    className="rounded-2xl shadow-lg"
+                  />
+                </div>
 
-                <Card className="p-6 bg-white/95 ">
+                <Card className="p-6 bg-white/90 backdrop-blur-sm rounded-2xl">
                   <CardContent className="space-y-4">
                     <h3 className="text-xl font-bold text-[#333333]">Nossos Diferenciais</h3>
                     <div className="space-y-2">
@@ -431,7 +435,7 @@ export default function EspacoMithariLanding() {
                     align: "start",
                     loop: true,
                   }}
-                  className="w-full max-w-[400px]"
+                  className="w-full max-w-[600px]"
                 >
                   <CarouselContent>
                     <CarouselItem>
@@ -439,8 +443,8 @@ export default function EspacoMithariLanding() {
                         <Image
                           src="/mithari.png"
                           alt="Espaço Mithari"
-                          width={400}
-                          height={500}
+                          width={600}
+                          height={600}
                           className="rounded-2xl shadow-2xl"
                         />
                       </div>
@@ -450,8 +454,8 @@ export default function EspacoMithariLanding() {
                         <Image
                           src="/mithari3.png"
                           alt="Espaço Mithari"
-                          width={400}
-                          height={500}
+                          width={600}
+                          height={600}
                           className="rounded-2xl shadow-2xl"
                         />
                       </div>
@@ -466,7 +470,7 @@ export default function EspacoMithariLanding() {
         </section>
 
         {/* Depoimentos */}
-        <section id="depoimentos" className="py-20 bg-[#e8566c]">
+        <section id="depoimentos" className="py-20 bg-gradient-to-b from-[#e8566c] to-[#d64560]">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">O Que Nossos Clientes Dizem</h2>
@@ -474,7 +478,7 @@ export default function EspacoMithariLanding() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <Card className="p-6 hover:shadow-lg transition-shadow bg-white/95">
+              <Card className="p-6 hover:shadow-lg transition-shadow bg-white/90 backdrop-blur-sm rounded-2xl">
                 <CardContent className="space-y-4">
                   <div className="flex items-center space-x-1 mb-2">
                     {[...Array(5)].map((_, i) => (
@@ -501,7 +505,7 @@ export default function EspacoMithariLanding() {
                 </CardContent>
               </Card>
 
-              <Card className="p-6 hover:shadow-lg transition-shadow bg-white/95">
+              <Card className="p-6 hover:shadow-lg transition-shadow bg-white/90 backdrop-blur-sm rounded-2xl">
                 <CardContent className="space-y-4">
                   <div className="flex items-center space-x-1 mb-2">
                     {[...Array(5)].map((_, i) => (
@@ -528,7 +532,7 @@ export default function EspacoMithariLanding() {
                 </CardContent>
               </Card>
 
-              <Card className="p-6 hover:shadow-lg transition-shadow bg-white/95">
+              <Card className="p-6 hover:shadow-lg transition-shadow bg-white/90 backdrop-blur-sm rounded-2xl">
                 <CardContent className="space-y-4">
                   <div className="flex items-center space-x-1 mb-2">
                     {[...Array(5)].map((_, i) => (
@@ -561,7 +565,7 @@ export default function EspacoMithariLanding() {
               <Link href="https://api.whatsapp.com/send?phone=5511989113465&text=Ol%C3%A1,%20tudo%20bem?%20gostaria%20de%20agendar%20uma%20consulta" target="_blank">
                 <Button
                   size="lg"
-                  className="bg-white text-[#e8566c] hover:bg-white/90 px-8 py-4 text-lg font-bold"
+                  className="bg-gradient-to-r from-white to-[#f8d7da] text-[#e8566c] hover:from-[#f8d7da] hover:to-white font-bold px-8 py-4 text-lg rounded-xl"
                 >
                       AGENDAR CONSULTA
                 </Button>
@@ -571,7 +575,7 @@ export default function EspacoMithariLanding() {
         </section>
 
         {/* FAQ */}
-        <section id="faq" className="py-20 bg-white">
+        <section id="faq" className="py-20 bg-gradient-to-b from-white to-[#f8d7da]">
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-4">Perguntas Frequentes</h2>
@@ -579,7 +583,7 @@ export default function EspacoMithariLanding() {
             </div>
 
             <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="item-1" className="border border-gray-200 rounded-lg px-6">
+              <AccordionItem value="item-1" className="border border-gray-200 rounded-2xl px-6 bg-white/90 backdrop-blur-sm">
                 <AccordionTrigger className="text-left font-semibold text-[#333333] hover:text-[#e8566c]">
                   Como funcionam as terapias holísticas?
                 </AccordionTrigger>
@@ -590,7 +594,7 @@ export default function EspacoMithariLanding() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-2" className="border border-gray-200 rounded-lg px-6">
+              <AccordionItem value="item-2" className="border border-gray-200 rounded-2xl px-6 bg-white/90 backdrop-blur-sm">
                 <AccordionTrigger className="text-left font-semibold text-[#333333] hover:text-[#e8566c]">
                   Quantas sessões são necessárias para ver resultados?
                 </AccordionTrigger>
@@ -601,7 +605,7 @@ export default function EspacoMithariLanding() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-3" className="border border-gray-200 rounded-lg px-6">
+              <AccordionItem value="item-3" className="border border-gray-200 rounded-2xl px-6 bg-white/90 backdrop-blur-sm">
                 <AccordionTrigger className="text-left font-semibold text-[#333333] hover:text-[#e8566c]">
                   As terapias têm alguma contraindicação?
                 </AccordionTrigger>
@@ -620,7 +624,7 @@ export default function EspacoMithariLanding() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-[#e8566c] text-[#e8566c] hover:bg-[#e8566c] hover:text-white font-bold"
+                  className="border-[#e8566c] text-[#e8566c] hover:bg-gradient-to-r hover:from-[#e8566c] hover:to-[#d64560] hover:text-white font-bold rounded-xl"
                 >
                       AGENDAR CONSULTA
                 </Button>
