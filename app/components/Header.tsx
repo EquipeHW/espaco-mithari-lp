@@ -114,7 +114,7 @@ export default function Header() {
           </nav>
         )}
 
-        <Button asChild className="hidden md:flex border-[#e8566c] text-[#fff] hover:bg-[#e8566c] hover:text-[white] font-bold">
+        <Button asChild className="hidden md:flex border-[#e8566c] text-[#fff] hover:bg-[#e8566c] hover:text-[white] font-bold rounded-xl">
           <Link href="https://api.whatsapp.com/send?phone=5511989113465&text=Ol%C3%A1,%20tudo%20bem?%20gostaria%20de%20agendar%20uma%20consulta" target="_blank">
             <Phone className="mr-2 h-5 w-5" />
             AGENDAR CONSULTA

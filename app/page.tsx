@@ -398,18 +398,18 @@ export default function EspacoMithariLanding() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-8">
                 <div className="space-y-4">
-                  <Badge className="bg-[#e8566c] text-white text-sm px-3 py-1">Desde 2015</Badge>
-                  <h2 className="text-3xl md:text-4xl font-bold text-[#333333]">Uma Jornada de Cura e Transformação</h2>
+                  <Badge className="bg-[#e8566c] text-white text-sm px-3 py-1">Desde 2018</Badge>
+                  <h2 className="text-3xl md:text-4xl font-bold text-[#333333]">Um Porto Seguro para Cura e Renascimento</h2>
                   <div className="text-lg text-gray-600 italic">
                     <p className="mb-4">
-                      "Minha missão é ser um canal de luz e cura, ajudando pessoas a reconectarem-se com sua essência e
-                      encontrarem o caminho para uma vida plena e equilibrada."
+                      "Minha missão é ser um canal de luz e cura, ajudando pessoas a reconectarem-se com sua essência e encontrarem o caminho para uma vida plena e equilibrada."
                     </p>
                   </div>
                   <p className="text-gray-600">
-                    Há quase uma década, o Espaço Mithari tem sido um refúgio de paz e transformação em São José dos
-                    Campos. Nossa fundadora, com certificações internacionais em diversas modalidades terapêuticas,
-                    dedica-se integralmente ao bem-estar de cada pessoa que nos procura.
+                    Há quase uma década, o Espaço Mithari é um lugar de transformação profunda em Osasco - SP. Nossa fundadora, médica com 30 anos de experiência e formação internacional em terapias integrativas, guia cada pessoa em uma jornada única de autodescoberta e cura multidimensional, onde corpo, mente e energia se harmonizam.
+                  </p>
+                  <p className="text-gray-600">
+                    Aqui, você é recebido(a) com escuta atenta e tratamentos personalizados, que integram o melhor da medicina moderna e das terapias ancestrais. Porque acreditamos que a verdadeira cura acontece quando nos enxergamos em nossa totalidade, e nos permitimos renascer.
                   </p>
                 </div>
 
