@@ -140,7 +140,7 @@ export default function GinecologiaPage() {
                     </p>
                     <Link href="https://wa.me/5511989113465" target="_blank">
                       <Button className="w-full bg-gradient-to-r from-[#e98a92] to-[#e8566c] hover:from-[#e8566c] hover:to-[#e98a92] text-white font-bold text-xl py-4 rounded-xl shadow-md">
-                        Agendar Consulta
+                      AGENDAR CONSULTA
                       </Button>
                     </Link>
                   </CardContent>
@@ -187,7 +187,7 @@ export default function GinecologiaPage() {
                   </ul>
                   <Link href="https://wa.me/5511989113465" target="_blank">
                     <Button className="w-full bg-gradient-to-r from-[#e98a92] to-[#e8566c] hover:from-[#e8566c] hover:to-[#e98a92] text-white rounded-2xl">
-                      Agendar Consulta
+                    AGENDAR CONSULTA
                     </Button>
                   </Link>
                 </CardContent>
@@ -217,7 +217,7 @@ export default function GinecologiaPage() {
                   </ul>
                   <Link href="https://wa.me/5511989113465" target="_blank">
                     <Button className="w-full bg-gradient-to-r from-[#e98a92] to-[#e8566c] hover:from-[#e8566c] hover:to-[#e98a92] text-white rounded-2xl">
-                      Agendar Consulta
+                    AGENDAR CONSULTA
                     </Button>
                   </Link>
                 </CardContent>
@@ -247,7 +247,7 @@ export default function GinecologiaPage() {
                   </ul>
                   <Link href="https://wa.me/5511989113465" target="_blank">
                     <Button className="w-full bg-gradient-to-r from-[#e98a92] to-[#e8566c] hover:from-[#e8566c] hover:to-[#e98a92] text-white rounded-2xl">
-                      Agendar Consulta
+                      AGENDAR CONSULTA
                     </Button>
                   </Link>
                 </CardContent>
