@@ -13,7 +13,7 @@ export default function Header() {
 
   // Rotas das landing pages
   const isLanding = [
-    "/fisioterapia",
+    "/fisioterapia-e-acumputura",
     "/musicoterapia",
     "/nutricao",
     "/ginecologia"
@@ -88,7 +88,7 @@ export default function Header() {
               Home
             </Link>
             <Link
-              href="/fisioterapia"
+              href="/fisioterapia-e-acumputura"
               className="text-sm font-medium text-[#333333] hover:text-[#e8566c] transition-colors"
             >
               Fisioterapia
@@ -138,7 +138,7 @@ export default function Header() {
               Home
             </Link>
             <Link
-              href="/fisioterapia"
+              href="/fisioterapia-e-acumputura"
               className="text-left text-[#333333] hover:text-[#e8566c] transition-colors"
             >
               Fisioterapia
