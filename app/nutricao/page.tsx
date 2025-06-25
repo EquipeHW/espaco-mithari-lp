@@ -334,17 +334,6 @@ export default function NutricaoPage() {
 
               <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
                 <CardHeader>
-                  <CardTitle className="text-[#e8566c]">Vocês atendem convênios?</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">
-                    Atendemos alguns convênios específicos. Entre em contato para verificar se o seu plano está na lista. Também oferecemos opções de pagamento facilitado para consultas particulares.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
-                <CardHeader>
                   <CardTitle className="text-[#e8566c]">Como agendar uma consulta?</CardTitle>
                 </CardHeader>
                 <CardContent>

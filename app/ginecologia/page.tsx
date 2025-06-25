@@ -98,55 +98,54 @@ export default function GinecologiaPage() {
         </section>
 
         {/* Equipe Section */}
-        <section className="py-20 bg-gradient-to-b from-[#f8d7da]/30 to-white relative overflow-hidden">
+        <section className="py-16 bg-gradient-to-b from-[#f8d7da]/30 to-white relative overflow-hidden">
           <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e8566c_0.5px,transparent_0.5px)] [background-size:20px_20px] opacity-5"></div>
           <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#e8566c] mb-4">
-                Nossa Equipe Especializada
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#e8566c] mb-2">
+                Nossa Especialista
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Profissionais altamente qualificadas para cuidar da sua saúde de forma integral
+                Atendimento personalizado e integral para a saúde da mulher, com acolhimento em todas as fases da vida.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <Card className="border border-[#f8d7da] hover:border-[#e8566c] transition-colors bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
-                <CardHeader>
-                  <CardTitle className="text-[#e8566c]">Dra. Mariângela de Souza Vaz</CardTitle>
-                  <CardDescription>
-                    Ginecologista especialista em saúde da mulher negra e acupuntura
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 mb-4">
-                    Atendimento especializado com foco na saúde da mulher negra, combinando ginecologia tradicional com práticas integrativas como acupuntura.
-                  </p>
-                  <Link href="https://wa.me/5511989113465" target="_blank">
-                    <Button className="w-full bg-gradient-to-r from-[#e98a92] to-[#e8566c] hover:from-[#e8566c] hover:to-[#e98a92] text-white">
-                      Agendar Consulta
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
-
-              <Card className="border border-[#f8d7da] hover:border-[#e8566c] transition-colors bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
-                <CardHeader>
-                  <CardTitle className="text-[#e8566c]">Dra. Marta Almeida</CardTitle>
-                  <CardDescription>
-                    Ginecologista especialista em psicossomática (CRM 106984 SP)
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 mb-4">
-                    Realiza consultas ginecológicas com abordagem sistêmica e integral, considerando aspectos físicos, emocionais e sociais.
-                  </p>
-                  <Link href="https://wa.me/5511989113465" target="_blank">
-                    <Button className="w-full bg-gradient-to-r from-[#e98a92] to-[#e8566c] hover:from-[#e8566c] hover:to-[#e98a92] text-white">
-                      Agendar Consulta
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+              {/* Imagem decorativa à esquerda */}
+              <div className="relative w-full max-w-md mx-5 md:max-w-xl flex-shrink-0">
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#e98a92]/70 to-[#e8566c]/80 opacity-10 z-10"></div>
+                <Image
+                  src="/hero.png"
+                  alt="Dra. Marta Almeida"
+                  width={500}
+                  height={600}
+                  className="rounded-3xl object-cover shadow-3xl relative z-0 w-full h-[420px] md:h-[600px]"
+                  priority
+                />
+              </div>
+              {/* Card da Dra. Marta à direita */}
+              <div className="w-full max-w-xl -mt-8 md:mt-0 md:ml-[-60px] z-20">
+                <Card className="border-2 border-[#e8566c]/30 shadow-2xl bg-white/90 backdrop-blur-sm rounded-2xl p-2 md:p-6">
+                  <CardHeader>
+                    <CardTitle className="text-[#e8566c] text-3xl md:text-4xl font-bold">Dra. Marta Almeida</CardTitle>
+                    <CardDescription className="text-gray-700 text-lg md:text-xl">
+                      Ginecologista especialista em psicossomática (CRM 106984 SP)
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 mb-3 text-lg md:text-xl">
+                      Realiza consultas ginecológicas com abordagem sistêmica e integral, considerando aspectos físicos, emocionais e sociais.
+                    </p>
+                    <p className="text-gray-700 mb-4 text-lg md:text-xl">
+                      Atuação especializada no cuidado das feridas emocionais pré e perinatais, tanto nos pais quanto nos bebês, durante o pré-natal e na primeira infância, promovendo saúde integral desde o início da vida.
+                    </p>
+                    <Link href="https://wa.me/5511989113465" target="_blank">
+                      <Button className="w-full bg-gradient-to-r from-[#e98a92] to-[#e8566c] hover:from-[#e8566c] hover:to-[#e98a92] text-white font-bold text-xl py-4 rounded-xl shadow-md">
+                        Agendar Consulta
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </section>
@@ -269,7 +268,7 @@ export default function GinecologiaPage() {
                 Histórias reais de mulheres que transformaram sua saúde conosco
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
                 <CardContent className="pt-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -291,18 +290,6 @@ export default function GinecologiaPage() {
                     "O pré-natal sistêmico foi uma experiência incrível. Me senti acolhida e preparada para a chegada do meu bebê de uma forma que nunca imaginei ser possível."
                   </p>
                   <p className="font-semibold text-[#e8566c]">Ana Costa, 32 anos</p>
-                </CardContent>
-              </Card>
-
-              <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
-                <CardContent className="pt-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Heart className="w-6 h-6 text-white" />
-                  </div>
-                  <p className="text-gray-600 italic mb-4">
-                    "A Dra. Mariângela tem um olhar único para a saúde da mulher negra. Pela primeira vez me senti verdadeiramente compreendida em minhas necessidades específicas."
-                  </p>
-                  <p className="font-semibold text-[#e8566c]">Juliana Santos, 35 anos</p>
                 </CardContent>
               </Card>
             </div>
@@ -329,17 +316,6 @@ export default function GinecologiaPage() {
                 <CardContent>
                   <p className="text-gray-600">
                     A primeira consulta é mais extensa, com duração de aproximadamente 1 hora. Realizamos uma avaliação completa, incluindo histórico médico, exame físico e discussão dos seus objetivos de saúde.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
-                <CardHeader>
-                  <CardTitle className="text-[#e8566c]">Vocês atendem convênios?</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">
-                    Atendemos alguns convênios específicos. Entre em contato para verificar se o seu plano está na lista. Também oferecemos opções de pagamento facilitado para consultas particulares.
                   </p>
                 </CardContent>
               </Card>

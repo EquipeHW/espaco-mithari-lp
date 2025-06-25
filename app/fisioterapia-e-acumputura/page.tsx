@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import TrackingScript from "@/app/components/TrackingScript";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 
 export default function FisioterapiaPage() {
   return (
@@ -17,39 +18,30 @@ export default function FisioterapiaPage() {
       <Header />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-14 md:py-10 bg-gradient-to-l from-[#e98a92] via-[#f8d7da] to-[#e8566c] overflow-hidden">
-          <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#f8f6f3_0.5px,transparent_0.5px)] [background-size:20px_20px] opacity-10"></div>
-          <div className="container grid gap-8 md:grid-cols-2 items-center relative">
-            <div className="space-y-6 text-center md:text-left">
+        <section className="relative py-20 md:py-32 min-h-[400px] md:min-h-[500px] overflow-hidden bg-[url('/fisioeacumputura/3.jpeg')] bg-cover bg-center">
+          <div className="absolute inset-0 z-20" style={{background: 'linear-gradient(90deg, #e98a92cc 60%, #f8d7dacc 80%, #e8566ccc 100%)'}} />
+          <div className="absolute inset-0 z-10 bg-[radial-gradient(#f8f6f3_0.5px,transparent_0.5px)] [background-size:20px_20px] opacity-10" />
+          <div className="container flex flex-col items-center justify-center min-h-[400px] md:min-h-[500px] relative z-30">
+            <div className="space-y-8 text-center">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
+                <h1 className="text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg mb-4">
                   Acupuntura e Fisioterapia
                 </h1>
-                <p className="text-lg md:text-xl text-white/90 mt-4 drop-shadow-md">
+                <p className="text-2xl md:text-3xl text-white/90 mb-8 drop-shadow-md">
                   Especializada no tratamento Físico e Emocional
                 </p>
               </motion.div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="https://wa.me/5511989113465" target="_blank">
-                  <Button size="lg" className="bg-white text-[#e8566c] hover:bg-white/90 rounded-xl">
-                    Agendar Consulta
+                  <Button size="lg" className="bg-white text-[#e8566c] hover:bg-white/90 rounded-xl text-lg md:text-xl px-8 py-4 font-bold shadow-lg">
+                    AGENDAR CONSULTA
                   </Button>
                 </Link>
               </div>
-            </div>
-            <div className="relative w-full h-auto md:h-[600px] flex items-center justify-center mt-10 md:mt-0">
-              <Image
-                src="/1.png"
-                alt="Fisioterapia"
-                width={600}
-                height={600}
-                className="rounded-3xl object-cover w-full h-full transition-transform duration-300 hover:scale-[1.02] opacity-65"
-                priority
-              />
             </div>
           </div>
         </section>
@@ -90,8 +82,8 @@ export default function FisioterapiaPage() {
             </div>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center mt-10">
               <a href="https://wa.me/5511989113465" target="_blank" rel="noopener noreferrer">
-                <button className="w-48 py-2 rounded-xl bg-[#e8566c] text-white font-bold text-lg shadow-md hover:bg-[#d64560] transition">
-                  Agendar Consulta
+                <button className="w-60 py-2 px-2 rounded-xl bg-[#e8566c] text-white font-bold text-lg shadow-md hover:bg-[#d64560] transition">
+                AGENDAR CONSULTA
                 </button>
               </a>
             
@@ -107,10 +99,16 @@ export default function FisioterapiaPage() {
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="relative flex justify-center">
-                  <div className="w-72 h-72 md:w-80 md:h-80 bg-gradient-to-br from-[#f8d7da] to-[#e8566c]/30 rounded-full flex items-center justify-center shadow-lg">
-                    <div className="w-60 h-60 md:w-72 md:h-72 bg-white rounded-full flex items-center justify-center shadow-inner">
-                      {/* Substitua por <Image ... /> quando tiver a foto */}
-                      <Users className="w-28 h-28 md:w-32 md:h-32 text-[#e8566c]" />
+                  <div className="w-100 h-100 md:w-100 md:h-100  bg-gradient-to-br from-[#f8d7da] to-[#e8566c]/30 rounded-full flex items-center justify-center shadow-lg">
+                    <div className="w-100 h-100 md:w-100 md:h-100 bg-white rounded-full flex items-center justify-center shadow-inner">
+                      <Image
+                        src="/mithari/5.jpeg"
+                        alt="Foto da Dra. Karina Cavalcanti"
+                        width={500}
+                        height={500}
+                        className="w-full h-full md:w-100 md:h-100 object-cover rounded-full"
+                        priority
+                      />
                     </div>
                   </div>
                 </div>
@@ -145,8 +143,8 @@ export default function FisioterapiaPage() {
                   </div>
                   <div className="flex flex-col md:flex-row gap-4 justify-center items-center mt-8">
                     <a href="https://wa.me/5511989113465" target="_blank" rel="noopener noreferrer">
-                      <button className="w-48 py-2 rounded-xl bg-[#e8566c] text-white font-bold text-lg shadow-md hover:bg-[#d64560] transition">
-                        Agendar Consulta
+                      <button className="w-60 py-2 rounded-xl bg-[#e8566c] text-white font-bold text-lg shadow-md hover:bg-[#d64560] transition">
+                      AGENDAR CONSULTA
                       </button>
                     </a>
                  
@@ -188,7 +186,7 @@ export default function FisioterapiaPage() {
                     <li className="flex items-center gap-3"><span className="flex-shrink-0 flex items-center justify-center w-6 h-6"><CheckCircle2 className="w-6 h-6 stroke-2 text-white" /></span><span className="flex-1 leading-snug">Problemas ortopédicos: osteoartrite, artrite reumatoide, cólica, lesões musculares e tendinites</span></li>
                   </ul>
                 </div>
-                <button className="w-52 mx-auto mb-10 py-2 rounded-xl bg-white text-[#e8566c] font-bold text-lg shadow-md hover:bg-[#f8d7da] transition mt-auto">Saiba Mais</button>
+                <button className="w-60 mx-auto mb-10 py-2 rounded-xl bg-white text-[#e8566c] font-bold text-lg shadow-md hover:bg-[#f8d7da] transition mt-auto">AGENDAR CONSULTA</button>
               </div>
               {/* Reabilitação Física */}
               <div
@@ -208,7 +206,7 @@ export default function FisioterapiaPage() {
                     <li className="flex items-center gap-3"><span className="flex-shrink-0 flex items-center justify-center w-6 h-6"><CheckCircle2 className="w-6 h-6 stroke-2 text-white" /></span><span className="flex-1 leading-snug">Cólicas menstruais e distúrbios ginecológicos: TPM, menopausa</span></li>
                   </ul>
                 </div>
-                <button className="w-52 mx-auto mb-10 py-2 rounded-xl bg-white text-[#e8566c] font-bold text-lg shadow-md hover:bg-[#f8d7da] transition mt-auto">Saiba Mais</button>
+                <button className="w-60 mx-auto mb-10 py-2 rounded-xl bg-white text-[#e8566c] font-bold text-lg shadow-md hover:bg-[#f8d7da] transition mt-auto">AGENDAR CONSULTA</button>
               </div>
               {/* Laserterapia */}
               <div
@@ -225,36 +223,88 @@ export default function FisioterapiaPage() {
                     <li className="flex items-center gap-3"><span className="flex-shrink-0 flex items-center justify-center w-6 h-6"><CheckCircle2 className="w-6 h-6 stroke-2 text-white" /></span><span className="flex-1 leading-snug">Cicatrizes, queloides e feridas, com efeitos colaterais</span></li>
                   </ul>
                 </div>
-                <button className="w-52 mx-auto mb-10 py-2 rounded-xl bg-white text-[#e8566c] font-bold text-lg shadow-md hover:bg-[#f8d7da] transition mt-auto">Saiba Mais</button>
+                <button className="w-60 mx-auto mb-10 py-2 rounded-xl bg-white text-[#e8566c] font-bold text-lg shadow-md hover:bg-[#f8d7da] transition mt-auto">AGENDAR CONSULTA</button>
               </div>
             </div>
           </div>
         </section>
 
         {/* Como Funciona a Primeira Consulta */}
-        <section className="py-20 bg-gradient-to-b from-[#f8d7da]/30 to-white relative overflow-hidden">
+        <section className="py-24 bg-gradient-to-b from-[#f8d7da]/30 to-white relative overflow-hidden">
           <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e8566c_0.5px,transparent_0.5px)] [background-size:20px_20px] opacity-5"></div>
-          <div className="container max-w-2xl mx-auto">
-            <Card className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden">
-              <div style={{ background: 'linear-gradient(135deg, #e8566c10 80%, #f8d7da 100%)' }} className="p-0 m-0">
-                <CardHeader>
-                  <CardTitle className="text-[#e8566c] text-2xl font-bold mb-2">Como funciona a primeira consulta?</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 text-lg mb-8">
-                    Além da avaliação física completa, já na primeira consulta você descobre qual a origem emocional por trás do seu problema de saúde. Então iniciamos um plano de tratamento para o cuidado físico e protocolos de cuidado emocional, para que você identifique e saia do padrão psicológico ou comportamental que te gera problemas!
-                  </p>
-                  <div className="flex flex-col md:flex-row gap-4 justify-center items-center mt-6">
-                    <a href="https://wa.me/5511989113465" target="_blank" rel="noopener noreferrer">
-                      <button className="w-48 py-2 rounded-xl bg-[#e8566c] text-white font-bold text-lg shadow-md hover:bg-[#d64560] transition">
-                        Agendar Consulta
-                      </button>
-                    </a>
-                    
-                  </div>
-                </CardContent>
+          <div className="container max-w-6xl mx-auto">
+            <div className="mb-12 flex flex-col items-center">
+              <span className="inline-block px-6 py-2 bg-white/80 text-[#e8566c] rounded-full text-lg font-bold shadow mb-2 tracking-wide">Primeira Consulta: Seu Novo Começo</span>
+              <div className="w-24 h-1 bg-gradient-to-r from-[#e8566c] to-[#f8d7da] rounded-full"></div>
+            </div>
+            <div className="flex flex-col md:flex-row items-center gap-16 md:gap-12 justify-center">
+              <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
+                <Carousel
+                  opts={{ align: "start", loop: true }}
+                  className="w-full max-w-md md:max-w-lg lg:max-w-xl"
+                >
+                  <CarouselContent>
+                    <CarouselItem>
+                      <div className="p-1">
+                        <Image
+                          src="/mithari/1.jpeg"
+                          alt="Espaço Mithari 1"
+                          width={600}
+                          height={450}
+                          className="rounded-3xl shadow-2xl object-cover w-full h-[320px] md:h-[400px] lg:h-[450px]"
+                          priority
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="p-1">
+                        <Image
+                          src="/mithari/2.jpeg"
+                          alt="Espaço Mithari 2"
+                          width={600}
+                          height={450}
+                          className="rounded-3xl shadow-2xl object-cover w-full h-[320px] md:h-[400px] lg:h-[450px]"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="p-1">
+                        <Image
+                          src="/mithari/4.jpeg"
+                          alt="Espaço Mithari 4"
+                          width={600}
+                          height={450}
+                          className="rounded-3xl shadow-2xl object-cover w-full h-[320px] md:h-[400px] lg:h-[450px]"
+                        />
+                      </div>
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious className="left-2 text-[#e8566c] bg-white/80" />
+                  <CarouselNext className="right-2 text-[#e8566c] bg-white/80" />
+                </Carousel>
               </div>
-            </Card>
+              <div className="w-full md:w-1/2 flex justify-center">
+                <Card className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden w-full max-w-md md:max-w-lg lg:max-w-xl border border-[#e8566c]">
+                  <div className="p-8">
+                    <CardHeader>
+                      <CardTitle className="text-[#e8566c] text-2xl font-bold mb-4">Como funciona a primeira consulta?</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-gray-600 text-lg mb-8">
+                        Além da avaliação física completa, já na primeira consulta você descobre qual a origem emocional por trás do seu problema de saúde. Então iniciamos um plano de tratamento para o cuidado físico e protocolos de cuidado emocional, para que você identifique e saia do padrão psicológico ou comportamental que te gera problemas!
+                      </p>
+                      <div className="flex flex-col md:flex-row gap-4 justify-center items-center mt-6">
+                        <a href="https://wa.me/5511989113465" target="_blank" rel="noopener noreferrer">
+                          <button className="w-60 py-3 rounded-xl bg-[#e8566c] text-white font-bold text-lg shadow-md hover:bg-[#d64560] transition">
+                          AGENDAR CONSULTA
+                          </button>
+                        </a>
+                      </div>
+                    </CardContent>
+                  </div>
+                </Card>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -270,7 +320,7 @@ export default function FisioterapiaPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="https://wa.me/5511989113465" target="_blank">
                 <Button size="lg" className="bg-white text-[#e8566c] hover:bg-white/90 font-semibold text-lg px-8 rounded-xl">
-                  Agendar Consulta
+                AGENDAR CONSULTA
                 </Button>
               </Link>
              
