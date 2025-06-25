@@ -35,15 +35,11 @@ export default function GinecologiaPage() {
               </motion.div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <Link href="https://wa.me/5511989113465" target="_blank">
-                  <Button size="lg" className="bg-white text-[#e8566c] hover:bg-white/90 font-semibold text-lg px-8">
-                    Agende sua Consulta
+                  <Button size="lg" className="bg-white text-[#e8566c] hover:bg-white/90 font-bold text-lg px-8 rounded-2xl">
+                    AGENDAR CONSULTA
                   </Button>
                 </Link>
-                <Link href="#diferenciais">
-                  <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10 font-semibold text-lg">
-                    Conheça Nossos Diferenciais
-                  </Button>
-                </Link>
+                
               </div>
             </div>
             <div className="relative w-full h-auto md:h-[600px] flex items-center justify-center mt-10 md:mt-0">
@@ -98,14 +94,18 @@ export default function GinecologiaPage() {
         </section>
 
         {/* Equipe Section */}
-        <section className="py-16 bg-gradient-to-b from-[#f8d7da]/30 to-white relative overflow-hidden">
-          <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e8566c_0.5px,transparent_0.5px)] [background-size:20px_20px] opacity-5"></div>
-          <div className="container">
+        <section className="py-16 relative overflow-hidden" style={{ background: '#e8566c' }}>
+          {/* Elementos geométricos decorativos */}
+          <div className="absolute top-10 left-10 w-32 h-32 bg-white/30 rounded-full blur-2xl z-0"></div>
+          <div className="absolute bottom-20 right-20 w-40 h-40 bg-[#fff0f3]/40 rounded-full blur-3xl z-0"></div>
+          <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-[#e98a92]/30 rounded-full blur-xl z-0"></div>
+          <div className="absolute bottom-10 left-1/2 w-16 h-16 bg-white/30 rounded-full blur-2xl z-0"></div>
+          <div className="container relative z-10">
             <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#e8566c] mb-2">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
                 Nossa Especialista
               </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
+              <p className="text-white/90 max-w-2xl mx-auto">
                 Atendimento personalizado e integral para a saúde da mulher, com acolhimento em todas as fases da vida.
               </p>
             </div>
@@ -163,7 +163,7 @@ export default function GinecologiaPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="border border-[#f8d7da] hover:border-[#e8566c] transition-colors bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
+              <Card className="border border-[#f8d7da] hover:border-[#e8566c] transition-colors bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
                 <CardHeader>
                   <CardTitle className="text-[#e8566c]">Pré-Natal Sistêmico</CardTitle>
                   <CardDescription>
@@ -186,14 +186,14 @@ export default function GinecologiaPage() {
                     </li>
                   </ul>
                   <Link href="https://wa.me/5511989113465" target="_blank">
-                    <Button className="w-full bg-gradient-to-r from-[#e98a92] to-[#e8566c] hover:from-[#e8566c] hover:to-[#e98a92] text-white">
+                    <Button className="w-full bg-gradient-to-r from-[#e98a92] to-[#e8566c] hover:from-[#e8566c] hover:to-[#e98a92] text-white rounded-2xl">
                       Agendar Consulta
                     </Button>
                   </Link>
                 </CardContent>
               </Card>
 
-              <Card className="border border-[#f8d7da] hover:border-[#e8566c] transition-colors bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
+              <Card className="border border-[#f8d7da] hover:border-[#e8566c] transition-colors bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
                 <CardHeader>
                   <CardTitle className="text-[#e8566c]">Consultas de Rotina</CardTitle>
                   <CardDescription>
@@ -216,14 +216,14 @@ export default function GinecologiaPage() {
                     </li>
                   </ul>
                   <Link href="https://wa.me/5511989113465" target="_blank">
-                    <Button className="w-full bg-gradient-to-r from-[#e98a92] to-[#e8566c] hover:from-[#e8566c] hover:to-[#e98a92] text-white">
+                    <Button className="w-full bg-gradient-to-r from-[#e98a92] to-[#e8566c] hover:from-[#e8566c] hover:to-[#e98a92] text-white rounded-2xl">
                       Agendar Consulta
                     </Button>
                   </Link>
                 </CardContent>
               </Card>
 
-              <Card className="border border-[#f8d7da] hover:border-[#e8566c] transition-colors bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
+              <Card className="border border-[#f8d7da] hover:border-[#e8566c] transition-colors bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
                 <CardHeader>
                   <CardTitle className="text-[#e8566c]">Tratamentos Especiais</CardTitle>
                   <CardDescription>
@@ -246,7 +246,7 @@ export default function GinecologiaPage() {
                     </li>
                   </ul>
                   <Link href="https://wa.me/5511989113465" target="_blank">
-                    <Button className="w-full bg-gradient-to-r from-[#e98a92] to-[#e8566c] hover:from-[#e8566c] hover:to-[#e98a92] text-white">
+                    <Button className="w-full bg-gradient-to-r from-[#e98a92] to-[#e8566c] hover:from-[#e8566c] hover:to-[#e98a92] text-white rounded-2xl">
                       Agendar Consulta
                     </Button>
                   </Link>
@@ -257,19 +257,23 @@ export default function GinecologiaPage() {
         </section>
 
         {/* Depoimentos Section */}
-        <section className="py-20 bg-gradient-to-b from-[#f8d7da]/30 to-white relative overflow-hidden">
-          <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e8566c_0.5px,transparent_0.5px)] [background-size:20px_20px] opacity-5"></div>
-          <div className="container">
+        <section className="py-20 relative overflow-hidden" style={{ background: '#e8566c' }}>
+          {/* Elementos geométricos decorativos */}
+          <div className="absolute top-10 left-10 w-32 h-32 bg-white/30 rounded-full blur-2xl z-0"></div>
+          <div className="absolute bottom-20 right-20 w-40 h-40 bg-[#fff0f3]/40 rounded-full blur-3xl z-0"></div>
+          <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-[#e98a92]/30 rounded-full blur-xl z-0"></div>
+          <div className="absolute bottom-10 left-1/2 w-16 h-16 bg-white/30 rounded-full blur-2xl z-0"></div>
+          <div className="container relative z-10">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#e8566c] mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 O Que Nossas Pacientes Dizem
               </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
+              <p className="text-white/90 max-w-2xl mx-auto">
                 Histórias reais de mulheres que transformaram sua saúde conosco
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
+              <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
                 <CardContent className="pt-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
                     <Heart className="w-6 h-6 text-white" />
@@ -281,7 +285,7 @@ export default function GinecologiaPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
+              <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
                 <CardContent className="pt-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
                     <Heart className="w-6 h-6 text-white" />
@@ -309,7 +313,7 @@ export default function GinecologiaPage() {
               </p>
             </div>
             <div className="max-w-3xl mx-auto space-y-6">
-              <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
+              <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
                 <CardHeader>
                   <CardTitle className="text-[#e8566c]">Como funciona a primeira consulta?</CardTitle>
                 </CardHeader>
@@ -320,7 +324,7 @@ export default function GinecologiaPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
+              <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
                 <CardHeader>
                   <CardTitle className="text-[#e8566c]">Como agendar uma consulta?</CardTitle>
                 </CardHeader>
@@ -346,15 +350,11 @@ export default function GinecologiaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="https://wa.me/5511989113465" target="_blank">
-                <Button size="lg" className="bg-white text-[#e8566c] hover:bg-white/90 font-semibold text-lg px-8">
-                  Agendar Consulta
+                <Button size="lg" className="bg-white text-[#e8566c] hover:bg-white/90 font-bold text-lg px-8 rounded-2xl">
+                  AGENDAR CONSULTA
                 </Button>
               </Link>
-              <Link href="tel:+5511989113465">
-                <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10 font-semibold text-lg">
-                  Ligar Agora
-                </Button>
-              </Link>
+            
             </div>
           </div>
         </section>

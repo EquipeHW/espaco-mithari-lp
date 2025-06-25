@@ -65,7 +65,7 @@ export default function Header() {
       </div>
 
       {/* Navbar Fixo */}
-      <div className="container flex h-20 items-center justify-between">
+      <div className="container flex h-24 items-center justify-between">
         <div className="flex items-center space-x-2">
           <Link href="/">
             <Image
@@ -73,7 +73,7 @@ export default function Header() {
               alt="Espaço Mithari Logo"
               width={200}
               height={100}
-              className="h-20 w-auto"
+              className="h-24 w-auto"
             />
           </Link>
         </div>
