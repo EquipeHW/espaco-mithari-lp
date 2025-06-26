@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import TrackingScript from "@/app/components/TrackingScript";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 
 export default function GinecologiaPage() {
   return (
@@ -272,31 +273,90 @@ export default function GinecologiaPage() {
                 Histórias reais de mulheres que transformaram sua saúde conosco
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
-                <CardContent className="pt-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Heart className="w-6 h-6 text-white" />
-                  </div>
-                  <p className="text-gray-600 italic mb-4">
-                    "A abordagem integrativa da Dra. Marta transformou completamente minha experiência com a menopausa. O cuidado com aspectos emocionais fez toda a diferença."
-                  </p>
-                  <p className="font-semibold text-[#e8566c]">Maria Silva, 48 anos</p>
-                </CardContent>
-              </Card>
-
-              <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
-                <CardContent className="pt-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Heart className="w-6 h-6 text-white" />
-                  </div>
-                  <p className="text-gray-600 italic mb-4">
-                    "O pré-natal sistêmico foi uma experiência incrível. Me senti acolhida e preparada para a chegada do meu bebê de uma forma que nunca imaginei ser possível."
-                  </p>
-                  <p className="font-semibold text-[#e8566c]">Ana Costa, 32 anos</p>
-                </CardContent>
-              </Card>
-            </div>
+            <Carousel opts={{ align: "start", loop: true }} className="w-full max-w-6xl mx-auto">
+              <CarouselContent>
+                <CarouselItem className="md:basis-1/3 lg:basis-1/3">
+                  <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
+                    <CardContent className="pt-6">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Heart className="w-6 h-6 text-white" />
+                      </div>
+                      <p className="text-gray-600 italic mb-4">
+                        "A abordagem integrativa da Dra. Marta transformou completamente minha experiência com a menopausa. O cuidado com aspectos emocionais fez toda a diferença."
+                      </p>
+                      <p className="font-semibold text-[#e8566c]">Maria Silva, 48 anos</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/3 lg:basis-1/3">
+                  <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
+                    <CardContent className="pt-6">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Heart className="w-6 h-6 text-white" />
+                      </div>
+                      <p className="text-gray-600 italic mb-4">
+                        "O pré-natal sistêmico foi uma experiência incrível. Me senti acolhida e preparada para a chegada do meu bebê de uma forma que nunca imaginei ser possível."
+                      </p>
+                      <p className="font-semibold text-[#e8566c]">Ana Costa, 32 anos</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/3 lg:basis-1/3">
+                  <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
+                    <CardContent className="pt-6">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Heart className="w-6 h-6 text-white" />
+                      </div>
+                      <p className="text-gray-600 italic mb-4">
+                        "Espaço é muito bom, bem localizado, e ótima infraestrutura! O atendimento com a Dra Marta foi maravilhoso, pois vai além dos sintomas físicos e exames, me senti vista como um todo, me ajudando a entender de maneira clara os efeitos que meu emocional tem causado em minha saúde física. Super recomendo, Dra Marta é uma mulher incrível, e seu atendimento é feito com muito amor e cuidado."
+                      </p>
+                      <p className="font-semibold text-[#e8566c]">Evelyn Carvalho dos Santos</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/3 lg:basis-1/3">
+                  <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
+                    <CardContent className="pt-6">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Heart className="w-6 h-6 text-white" />
+                      </div>
+                      <p className="text-gray-600 italic mb-4">
+                        "Eu e minha esposa fomos atendidos com muita dedicação e profissionalismo pela Dra. Marta. Melhor médica que encontrei em mais de 40 anos. A Dra. Marta nos atendeu nos aspectos mais profundos e abrangentes da medicina. Tenho indicado a todos que pedem indicação de médico. Recomendo."
+                      </p>
+                      <p className="font-semibold text-[#e8566c]">Alberto Stef</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/3 lg:basis-1/3">
+                  <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
+                    <CardContent className="pt-6">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Heart className="w-6 h-6 text-white" />
+                      </div>
+                      <p className="text-gray-600 italic mb-4">
+                        "Local maravilhoso! A dra. Marta é uma excelente médica e também uma pessoa que cuida das pessoas e se importa realmente conosco. Super indico!"
+                      </p>
+                      <p className="font-semibold text-[#e8566c]">Danilo Soares Avila</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/3 lg:basis-1/3">
+                  <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
+                    <CardContent className="pt-6">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Heart className="w-6 h-6 text-white" />
+                      </div>
+                      <p className="text-gray-600 italic mb-4">
+                        "O espaço é lindo e muito aconchegante. A Dra. Marta é uma querida, uma excelente profissional, super capacitada, cheia de conhecimento e experiências na área. Abençoada no que faz e no que ama fazer. Ela cuida de mim há muitos anos, agora também de alguns familiares e amigos. Obrigado dra linda 🙏🏻💋"
+                      </p>
+                      <p className="font-semibold text-[#e8566c]">Eliana Barros</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="left-2 text-[#e8566c] bg-white/80" />
+              <CarouselNext className="right-2 text-[#e8566c] bg-white/80" />
+            </Carousel>
           </div>
         </section>
 
