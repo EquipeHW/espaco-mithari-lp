@@ -44,7 +44,7 @@ export default function GinecologiaPage() {
             </div>
             <div className="relative w-full h-auto md:h-[600px] flex items-center justify-center mt-10 md:mt-0">
               <Image
-                src="/4.png"
+                src="/ginecologia/3.jpeg"
                 alt="Ginecologia"
                 width={600}
                 height={600}
