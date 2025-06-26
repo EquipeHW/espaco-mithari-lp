@@ -343,43 +343,56 @@ export default function MusicoterapiaPage() {
                 Histórias reais de pessoas que transformaram sua saúde através da música
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
-                <CardContent className="pt-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Heart className="w-6 h-6 text-white" />
-                  </div>
-                  <p className="text-gray-600 italic mb-4">
-                    "A musicoterapia me ajudou a superar minha ansiedade de uma forma que nunca imaginei ser possível. A abordagem é única e transformadora."
-                  </p>
-                  <p className="font-semibold text-[#e8566c]">Mariana Costa, 32 anos</p>
-                </CardContent>
-              </Card>
-
-              <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
-                <CardContent className="pt-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Heart className="w-6 h-6 text-white" />
-                  </div>
-                  <p className="text-gray-600 italic mb-4">
-                    "Meu filho desenvolveu habilidades sociais incríveis através da musicoterapia. A Dra. Beatriz tem um dom especial com as crianças."
-                  </p>
-                  <p className="font-semibold text-[#e8566c]">Ana Paula, mãe do Pedro, 7 anos</p>
-                </CardContent>
-              </Card>
-
-              <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl">
-                <CardContent className="pt-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Heart className="w-6 h-6 text-white" />
-                  </div>
-                  <p className="text-gray-600 italic mb-4">
-                    "As sessões em grupo são uma experiência incrível. A música nos conecta de uma forma única e terapêutica."
-                  </p>
-                  <p className="font-semibold text-[#e8566c]">Carlos Eduardo, 45 anos</p>
-                </CardContent>
-              </Card>
-            </div>
+            <Carousel opts={{ align: "start", loop: true }} className="w-full max-w-3xl mx-auto">
+              <CarouselContent>
+                <CarouselItem>
+                  <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg flex items-center justify-center rounded-3xl">
+                    <CardContent className="pt-6 flex justify-center">
+                      <img 
+                        src="/musicoterapia/depoimentos/ariane.jpeg"
+                        alt="Depoimento real de Ariane"
+                        className="rounded-2xl shadow-lg max-h-96 object-contain"
+                      />
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg flex items-center justify-center rounded-3xl">
+                    <CardContent className="pt-6 flex justify-center">
+                      <img 
+                        src="/musicoterapia/depoimentos/eduardo.jpeg"
+                        alt="Depoimento real de Eduardo"
+                        className="rounded-2xl shadow-lg max-h-96 object-contain"
+                      />
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg flex items-center justify-center rounded-3xl">
+                    <CardContent className="pt-6 flex justify-center">
+                      <img 
+                        src="/musicoterapia/depoimentos/yuri1.jpeg"
+                        alt="Depoimento real de Yuri 1"
+                        className="rounded-2xl shadow-lg max-h-96 object-contain"
+                      />
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg flex items-center justify-center rounded-3xl">
+                    <CardContent className="pt-6 flex justify-center">
+                      <img 
+                        src="/musicoterapia/depoimentos/yuri2.jpeg"
+                        alt="Depoimento real de Yuri 2"
+                        className="rounded-2xl shadow-lg max-h-96 object-contain"
+                      />
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="left-2 text-[#e8566c] bg-white/80" />
+              <CarouselNext className="right-2 text-[#e8566c] bg-white/80" />
+            </Carousel>
             <div className="flex justify-center mt-10">
               <a href="https://wa.me/5511989113465" target="_blank" rel="noopener noreferrer">
                 <button className="py-3 px-8 rounded-2xl bg-[#e8566c] text-white font-bold text-lg shadow-md hover:bg-[#d64560] transition">Agendar Sessão</button>
