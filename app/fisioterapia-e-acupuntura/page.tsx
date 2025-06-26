@@ -229,6 +229,91 @@ export default function FisioterapiaPage() {
           </div>
         </section>
 
+        {/* Depoimentos Section */}
+        <section className="py-20 relative overflow-hidden" style={{ background: '#e8566c' }}>
+          <div className="container relative z-10">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                O Que Nossos Pacientes Dizem
+              </h2>
+              <p className="text-white/90 max-w-2xl mx-auto">
+                Depoimentos reais de quem já passou pelo nosso cuidado integrativo
+              </p>
+            </div>
+            <Carousel opts={{ align: 'start', loop: true }} className="w-full max-w-4xl mx-auto">
+              <CarouselContent>
+                <CarouselItem className="md:basis-1/3 lg:basis-1/3">
+                  <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
+                    <CardContent className="pt-6">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Heart className="w-6 h-6 text-white" />
+                      </div>
+                      <p className="text-gray-600 italic mb-4">
+                        "Terapeuta extremamente qualificada, profissional, ética, com um atendimento humanizado, um olhar sensível e acolhedor. A Karina transmite uma confiança no que ela faz, pois está sempre buscando aprimorar seus conhecimentos. Sou paciente dela há quase 3 anos e nunca saí do consultório com a queixa que cheguei. Eu super recomendo, e aconselho a só confiar, confia na Karina, confia no processo terapêutico, que o restante vem, mas vem mesmo ❤️"
+                      </p>
+                      <p className="font-semibold text-[#e8566c]">Cristiane Cris</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/3 lg:basis-1/3">
+                  <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
+                    <CardContent className="pt-6">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Heart className="w-6 h-6 text-white" />
+                      </div>
+                      <p className="text-gray-600 italic mb-4">
+                        "Profissional mega atenciosa. Cuidou muito bem de minhas lesões de lombar, joelho e pé; minha recuperação foi super rápida."
+                      </p>
+                      <p className="font-semibold text-[#e8566c]">Lucas Faustino</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/3 lg:basis-1/3">
+                  <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
+                    <CardContent className="pt-6">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Heart className="w-6 h-6 text-white" />
+                      </div>
+                      <p className="text-gray-600 italic mb-4">
+                        "Karina é uma ótima terapeuta, não poderia pedir melhor! Ela sempre presta muita atenção nos problemas que eu exponho e analisa também as palavras que eu uso para me expressar sobre algo, muito atenciosa e prestativa, um amor de pessoa! 🥰"
+                      </p>
+                      <p className="font-semibold text-[#e8566c]">Marianne dos Santos</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/3 lg:basis-1/3">
+                  <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
+                    <CardContent className="pt-6">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Heart className="w-6 h-6 text-white" />
+                      </div>
+                      <p className="text-gray-600 italic mb-4">
+                        "Profissional completa e muito dedicada. As sessões de análise com ela são transformadoras. Logo na primeira sessão ela me descreveu certinho apenas analisando o meu corpo, achei isso demais! Karina, obrigada por compartilhar tanto conhecimento em cada sessão e pela sua dedicação em extrair o melhor em cada paciente. Evolui muito contigo!"
+                      </p>
+                      <p className="font-semibold text-[#e8566c]">Jéssica Assis</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/3 lg:basis-1/3">
+                  <Card className="border border-[#f8d7da] bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl rounded-3xl">
+                    <CardContent className="pt-6">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#e98a92] to-[#e8566c] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Heart className="w-6 h-6 text-white" />
+                      </div>
+                      <p className="text-gray-600 italic mb-4">
+                        "Karina é uma profissional com múltiplas habilidades, entende as dores e faz o melhor para saná-las. Com 2 sessões as minhas dores na cervical já melhoraram muito e no final do tratamento estava sem dores. Obrigada por sua dedicação."
+                      </p>
+                      <p className="font-semibold text-[#e8566c]">Pérola A. Gonçalves Morilha</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="left-2 text-[#e8566c] bg-white/80" />
+              <CarouselNext className="right-2 text-[#e8566c] bg-white/80" />
+            </Carousel>
+          </div>
+        </section>
+
         {/* Como Funciona a Primeira Consulta */}
         <section className="py-24 bg-gradient-to-b from-[#f8d7da]/30 to-white relative overflow-hidden">
           <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e8566c_0.5px,transparent_0.5px)] [background-size:20px_20px] opacity-5"></div>
