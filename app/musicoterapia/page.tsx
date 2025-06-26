@@ -121,17 +121,17 @@ export default function MusicoterapiaPage() {
               </h2>
             </div>
             <div className="mx-auto items-center grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3">
-              <Card className="p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center max-w-sm w-full h-[300px] justify-between">
+              <Card className="w-full max-w-xs sm:max-w-sm mx-auto bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center justify-between p-6 sm:p-8 break-words overflow-hidden">
                 <span className="text-6xl mb-4">🎵</span>
                 <h3 className="text-xl font-semibold mb-2 text-[#e8566c] text-center">Abordagem Personalizada</h3>
                 <p className="text-gray-700 text-center">Cada ser é único — por isso, nossos atendimentos são adaptados às necessidades individuais de crianças, adolescentes, adultos e famílias, respeitando sua história, ritmo e expressão.</p>
               </Card>
-              <Card className="p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center max-w-sm w-full h-[300px] justify-between">
+              <Card className="w-full max-w-xs sm:max-w-sm mx-auto bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center justify-between p-6 sm:p-8 break-words overflow-hidden">
                 <span className="text-6xl mb-4">🎶</span>
                 <h3 className="text-xl font-semibold mb-2 text-[#e8566c] text-center">Técnicas Diversificadas</h3>
                 <p className="text-gray-700 text-center">Utilizamos diversas abordagens da musicoterapia clínica, incluindo canto terapêutico, improvisação musical, relaxamento sonoro, jogos musicais, musicalização afetiva e arteterapia.</p>
               </Card>
-              <Card className="p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center max-w-sm w-full h-[300px] justify-between">
+              <Card className="w-full max-w-xs sm:max-w-sm mx-auto bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl flex flex-col items-center justify-between p-6 sm:p-8 break-words overflow-hidden">
                 <span className="text-6xl mb-4">🤝</span>
                 <h3 className="text-xl font-semibold mb-2 text-[#e8566c] text-center">Equipe Especializada</h3>
                 <p className="text-gray-700 text-center">Contamos com profissionais altamente capacitados, com formações em múltiplas áreas terapêuticas e experiência com diferentes perfis e condições de saúde, para oferecer um cuidado amplo, ético e sensível.</p>
