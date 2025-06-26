@@ -44,7 +44,7 @@ export default function GinecologiaPage() {
             </div>
             <div className="relative w-full h-auto md:h-[600px] flex items-center justify-center mt-10 md:mt-0">
               <Image
-                src="/ginecologia/3.jpeg"
+                src="/ginecologia/1.jpeg"
                 alt="Ginecologia"
                 width={600}
                 height={600}
@@ -112,9 +112,9 @@ export default function GinecologiaPage() {
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
               {/* Imagem decorativa à esquerda */}
               <div className="relative w-full max-w-md mx-5 md:max-w-xl flex-shrink-0">
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#e98a92]/70 to-[#e8566c]/80 opacity-10 z-10"></div>
+                <div className="absolute inset-0 rounded-3xl z-10"></div>
                 <Image
-                  src="/hero.png"
+                  src="/ginecologia/6.jpeg"
                   alt="Dra. Marta Almeida"
                   width={500}
                   height={600}
