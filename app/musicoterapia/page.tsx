@@ -277,7 +277,7 @@ export default function MusicoterapiaPage() {
                 <div className="flex flex-col items-center bg-white/90 rounded-3xl p-10 h-full min-h-[440px] justify-between">
                   <div className="flex flex-col items-center mb-6">
                     <span className="text-6xl mb-4">🤰👨‍👩‍👧</span>
-                    <h3 className="text-xl font-extrabold text-[#e8566c] text-center mb-4">Familiar e Pré-Natal</h3>
+                    <h3 className="text-xl font-extrabold text-[#e8566c] text-center mb-4">Familiar e primeira infância</h3>
                     <ul className="list-none space-y-3 text-gray-700 text-base font-medium w-full max-w-xs mx-auto">
                       <li className="flex items-start gap-3"><span className="mt-1 text-[#e8566c]">●</span> Acompanhamento de gestantes e vínculos gestacionais</li>
                       <li className="flex items-start gap-3"><span className="mt-1 text-[#e8566c]">●</span> Musicalização afetiva entre mães, bebês e cuidadores</li>

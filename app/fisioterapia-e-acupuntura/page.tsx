@@ -231,7 +231,7 @@ export default function FisioterapiaPage() {
 
         {/* Depoimentos Section */}
         <section className="py-20 relative overflow-hidden" style={{ background: '#e8566c' }}>
-          <div className="container relative z-10">
+          <div className="container max-w-8xl relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 O Que Nossos Pacientes Dizem
