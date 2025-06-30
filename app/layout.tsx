@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Poppins, Open_Sans } from "next/font/google"
 import "./globals.css"
+import GoogleTagManager from "./components/GoogleTagManager"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -38,7 +39,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
-      <body className={`${poppins.variable} ${openSans.variable} font-sans antialiased`}>{children}</body>
+      <body className={`${poppins.variable} ${openSans.variable} font-sans antialiased`}>
+        <GoogleTagManager />
+        {children}
+      </body>
     </html>
   )
 }
